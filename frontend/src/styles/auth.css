@@ -1,0 +1,166 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.auth-box,
+.auth-card {
+  width: min(420px, 92vw);
+  margin: 0 auto;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.auth-box h2,
+.auth-card h2 {
+  margin: 0 0 18px;
+  text-align: center;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-box input,
+.auth-card input,
+.auth-box select,
+.auth-card select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.auth-box button,
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+}
+
+.auth-box p[style*="red"] {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.dashboard-select {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-select button {
+  margin: 0;
+}
+
+.dashboard-select-wide {
+  width: min(920px, 94vw);
+}
+
+.dashboard-select-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.fixture-panel {
+  margin-top: 12px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fixture-panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.fixture-panel-header h3,
+.fixture-section h4 {
+  margin: 0;
+}
+
+.fixture-panel-header p,
+.fixture-empty,
+.fixture-error,
+.fixture-line {
+  margin: 0;
+}
+
+.fixture-panel-header p,
+.fixture-empty,
+.fixture-line {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.fixture-error {
+  color: #ffb3b3;
+}
+
+.fixture-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.fixture-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fixture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.fixture-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fixture-card-matchup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.fixture-team {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 600;
+}
+
+.fixture-vs {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+@media (max-width: 768px) {
+  .fixture-panel-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

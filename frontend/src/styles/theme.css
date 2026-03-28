@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2b1055, #1e3c72, #000);
+  color: white;
+}
+
+button {
+  background: #3b2f63;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: none;
+}
